@@ -16,6 +16,10 @@ jobs:
     - name: Build with csc
       working-directory: src
 #      run: { csc -nologo -recurse:*.cs -nullable:enable -langversion:latest; chmod 755 *.exe; ./*.exe; }
-      run: csc -nologo -recurse:*.cs -nullable:enable -langversion:latest
-      run: chmod 755 *.exe
-      run: ./*.exe
+#      run: csc -nologo -recurse:*.cs -nullable:enable -langversion:latest
+#      run: chmod 755 *.exe
+#      run: ./*.exe
+    - run: |
+        csc -nologo -recurse:*.cs -nullable:enable -langversion:latest
+        chmod 755 *.exe
+        ./*.exe
