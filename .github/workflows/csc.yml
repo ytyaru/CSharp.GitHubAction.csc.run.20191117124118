@@ -19,7 +19,7 @@ jobs:
 #      run: csc -nologo -recurse:*.cs -nullable:enable -langversion:latest
 #      run: chmod 755 *.exe
 #      run: ./*.exe
-    - run: |
+      run: |
         csc -nologo -recurse:*.cs -nullable:enable -langversion:latest
         chmod 755 *.exe
         ./*.exe
